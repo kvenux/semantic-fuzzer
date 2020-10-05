@@ -1,0 +1,8 @@
+8@#@@#@&$%test()@#@0,3,test,@#@&$%assert(cnt === 8 && r === 1)@#@7,9,cnt,20,20,r,@#@&$%cnt === 8 && r === 1@#@0,2,cnt,13,13,r,@#@&$%r === 1@#@0,0,r,@#@&$%{
+  member: 1,
+  valueOf: function () {
+    return this.member;
+  }
+}@#@@#@&$%function () {
+    return this.member;
+  }@#@@#@&$%this.member@#@@#@&$%assert(-a === -1)@#@8,8,a,@#@&$%-a === -1@#@1,1,a,@#@&$%-1@#@@#@&$%++j@#@2,2,j,@#@&$%

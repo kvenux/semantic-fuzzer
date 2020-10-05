@@ -4,8 +4,17 @@
  */
 
 #pragma once
+#include "tree/ErrorNode.h"
+#include "ParserRuleContext.h"
+#include "tree/ParseTreeListener.h"
+#include "support/CPPUtils.h"
+
+#include "tree/IterativeParseTreeWalker.h"
+#include "tree/ParseTreeWalker.h"
 
 #include "tree/ParseTreeVisitor.h"
+#include <iostream>
+using namespace std;
 
 namespace antlr4 {
 namespace tree {
@@ -38,6 +47,9 @@ namespace tree {
         if (!shouldVisitNextChild(node, result)) {
           break;
         }
+        // if(antlrcpp::is<TerminalNode *>(node->children[i]))
+          // cout<<"child string: "<<node->children[i]->getText()<<endl;
+          // cout<<"child string: "<<node->children[i]->getRuleIndex()<<endl;
 
         antlrcpp::Any childResult = node->children[i]->accept(this);
         result = aggregateResult(result, childResult);

@@ -1,0 +1,816 @@
+var a = {
+  valueOf: function () {
+    return 1;
+  }
+}@#@@#@&$%return 1;@#@@#@&$%assert(+a === 1)@#@0,5,assert,8,8,a,@#@&$%var a = {
+  _a: 3,
+  get a() {
+    return this._a;
+  }
+};@#@@#@&$%return this._a;@#@@#@&$%a._a = 5;@#@0,0,a,@#@&$%assert(a.a === 5);@#@0,5,assert,7,7,a,@#@&$%var a = {
+  valueOf: function () {
+    return false;
+  }
+}@#@@#@&$%return false;@#@@#@&$%assert(!a === false)@#@0,5,assert,8,8,a,@#@&$%this.name = name@#@12,15,name,@#@&$%this.canWalk = true@#@@#@&$%if (name == "bird")
+  {
+    this.canFly = true;
+  }@#@4,7,name,@#@&$%{
+    this.canFly = true;
+  }@#@@#@&$%this.canFly = true;@#@@#@&$%var animal = new Animal("animal");@#@17,22,Animal,@#@&$%var bird = new Animal("bird");@#@15,20,Animal,@#@&$%assert(animal.canWalk === true);@#@0,5,assert,7,12,animal,@#@&$%assert(animal.canFly === undefined);@#@0,5,assert,7,12,animal,25,33,undefined,@#@&$%assert(bird.canFly === true);@#@0,5,assert,7,10,bird,@#@&$%var a = {
+  valueOf: function () {
+    return null;
+  }
+}@#@@#@&$%return null;@#@@#@&$%assert(+a === +0)@#@0,5,assert,8,8,a,@#@&$%var cnt = 0;@#@@#@&$%do
+{
+  cnt++;
+}
+while (!(cnt & 0x8000));@#@7,9,cnt,25,27,cnt,@#@&$%{
+  cnt++;
+}@#@4,6,cnt,@#@&$%cnt++;@#@0,2,cnt,@#@&$%assert(cnt == 32768);@#@0,5,assert,7,9,cnt,@#@&$%var a = {name: "a", value: "1"};@#@@#@&$%var b = {name: "b", value: "1"};@#@@#@&$%assert(isNaN(plus(a, b)));@#@0,5,assert,7,11,isNaN,13,16,plus,18,18,a,21,21,b,@#@&$%return a.value * b.name;@#@7,7,a,17,17,b,@#@&$%var cnt = 1;@#@@#@&$%do
+{
+  cnt++;
+  if (cnt === 42) {
+    break;
+  }
+} while (true);@#@7,9,cnt,20,22,cnt,@#@&$%{
+  cnt++;
+  if (cnt === 42) {
+    break;
+  }
+}@#@4,6,cnt,17,19,cnt,@#@&$%if (cnt === 42) {
+    break;
+  }@#@4,6,cnt,@#@&$%{
+    break;
+  }@#@@#@&$%break;@#@@#@&$%var n = {
+  valueOf: function () {
+    return 109.5;
+  }
+}@#@@#@&$%return 109.5;@#@@#@&$%var d = {
+  valueOf: function () {
+    return 5.5;
+  }
+}@#@@#@&$%return 5.5;@#@@#@&$%assert(n % d === 5)@#@0,5,assert,7,7,n,11,11,d,@#@&$%assert(animal.name == "animal");@#@0,5,assert,7,12,animal,@#@&$%assert(animal.name != "insect");@#@0,5,assert,7,12,animal,@#@&$%var a = {
+  foo: function ()
+  {
+    return 1;
+  }
+}@#@@#@&$%assert(a.foo() === 1);@#@0,5,assert,7,7,a,@#@&$%{
+  {
+    var a = null;
+    ;
+  }
+  {
+    {
+    }
+  }
+  a = 'null';
+}@#@56,56,a,@#@&$%{
+    var a = null;
+    ;
+  }@#@@#@&$%var a = null;@#@@#@&$%;@#@@#@&$%{
+    {
+    }
+  }@#@@#@&$%{
+    }@#@@#@&$%a = 'null';@#@0,0,a,@#@&$%assert(a === 'null');@#@0,5,assert,7,7,a,@#@&$%for
+        (
+                var i = 0
+                ;
+                i < 10
+                ;
+                i++
+                )
+{
+  i++;
+}@#@74,74,i,115,115,i,141,141,i,@#@&$%assert(i == 10);@#@0,5,assert,7,7,i,@#@&$%var o = {a: 1, b: 2, c: 3};@#@@#@&$%for
+        (
+                var
+                p in o
+                )
+{
+  o[p] += 4;
+}@#@55,55,o,79,79,o,81,81,p,@#@&$%{
+  o[p] += 4;
+}@#@4,4,o,6,6,p,@#@&$%o[p] += 4;@#@0,0,o,2,2,p,@#@&$%assert(o.a === 5 && o.b === 6 && o.c === 7);@#@0,5,assert,7,7,o,20,20,o,33,33,o,@#@&$%var obj = {
+  field: Number,
+  foo: function () {
+    this.field++;
+  }
+}@#@21,26,Number,@#@&$%this.field++;@#@@#@&$%obj.field = 3;@#@0,2,obj,@#@&$%obj.foo();@#@0,2,obj,@#@&$%assert(obj.field === 4);@#@0,5,assert,7,9,obj,@#@&$%var sum = 0;@#@@#@&$%ForLabel:
+        for (var i = 0; i < 10; i++)
+{
+  if (i === 5)
+  {
+    continue ForLabel;
+  }
+  sum += i;
+}@#@34,34,i,42,42,i,55,55,i,97,99,sum,104,104,i,@#@&$%for (var i = 0; i < 10; i++)
+{
+  if (i === 5)
+  {
+    continue ForLabel;
+  }
+  sum += i;
+}@#@16,16,i,24,24,i,37,37,i,79,81,sum,86,86,i,@#@&$%{
+  if (i === 5)
+  {
+    continue ForLabel;
+  }
+  sum += i;
+}@#@8,8,i,50,52,sum,57,57,i,@#@&$%if (i === 5)
+  {
+    continue ForLabel;
+  }@#@4,4,i,@#@&$%{
+    continue ForLabel;
+  }@#@@#@&$%continue ForLabel;@#@@#@&$%sum += i;@#@0,2,sum,7,7,i,@#@&$%assert(sum === 40);@#@0,5,assert,7,9,sum,@#@&$%var bitField = 0x1000000;@#@@#@&$%while (bitField >>= 1)
+{
+  cnt++;
+}@#@7,14,bitField,27,29,cnt,@#@&$%assert(cnt === 24);@#@0,5,assert,7,9,cnt,@#@&$%var mainloop = 1, cnt = 0;@#@@#@&$%for (var i = 0; i < 10; ++i)
+{
+  for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      break
+      mainloop
+    }
+    ++cnt;
+  }
+}@#@16,16,i,26,26,i,49,49,j,59,59,j,74,74,j,127,129,cnt,@#@&$%{
+  for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      break
+      mainloop
+    }
+    ++cnt;
+  }
+}@#@20,20,j,30,30,j,45,45,j,98,100,cnt,@#@&$%for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      break
+      mainloop
+    }
+    ++cnt;
+  }@#@16,16,j,26,26,j,41,41,j,94,96,cnt,@#@&$%{
+    if (j == 6)
+    {
+      break
+      mainloop
+    }
+    ++cnt;
+  }@#@10,10,j,63,65,cnt,@#@&$%if (j == 6)
+    {
+      break
+      mainloop
+    }@#@4,4,j,@#@&$%{
+      break
+      mainloop
+    }@#@@#@&$%break
+      mainloop@#@@#@&$%++cnt;@#@2,4,cnt,@#@&$%assert(cnt == 60);@#@0,5,assert,7,9,cnt,@#@&$%var a = 1;@#@@#@&$%var b = 2;@#@@#@&$%var c = 1;@#@@#@&$%var d = 1;@#@@#@&$%var e;@#@@#@&$%e = (a < b) ? (c = 100) : (d = 10);@#@0,0,e,5,5,a,9,9,b,15,15,c,27,27,d,@#@&$%assert(c == 100 && e == 100 && d == 1)@#@0,5,assert,7,7,c,19,19,e,31,31,d,@#@&$%var cond = 12;@#@@#@&$%var res;@#@@#@&$%res = (cond < 13)
+        ?
+        1
+        :
+        2;@#@0,2,res,7,10,cond,@#@&$%assert(res == 1)@#@0,5,assert,7,9,res,@#@&$%var a = {
+  valueOf: function () {
+    return "1";
+  }
+}@#@@#@&$%return "1";@#@@#@&$%assert(-a === 0)@#@0,5,assert,8,8,a,@#@&$%var mask = 0xff0f;@#@@#@&$%var numZeroes = 0;@#@@#@&$%do
+{
+  mask >>= 1;
+  if (mask & 1)
+    continue;
+  numZeroes++;
+} while (mask);@#@7,10,mask,25,28,mask,51,59,numZeroes,73,76,mask,@#@&$%{
+  mask >>= 1;
+  if (mask & 1)
+    continue;
+  numZeroes++;
+}@#@4,7,mask,22,25,mask,48,56,numZeroes,@#@&$%mask >>= 1;@#@0,3,mask,@#@&$%if (mask & 1)
+    continue;@#@4,7,mask,@#@&$%continue;@#@@#@&$%assert(numZeroes === 5);@#@0,5,assert,7,15,numZeroes,@#@&$%do
+{
+  cnt++;
+}
+while (!"string");@#@7,9,cnt,@#@&$%assert(cnt === 2);@#@0,5,assert,7,9,cnt,@#@&$%var a = {
+  _a: 3,
+  get a() {
+    return this._a;
+  },
+  set a(newa) {
+    this._a = newa;
+  }
+};@#@86,89,newa,@#@&$%this._a = newa;@#@10,13,newa,@#@&$%a.a = 5;@#@0,0,a,@#@&$%e = (a > b) ? (c = 100) : (d = 10);@#@0,0,e,5,5,a,9,9,b,15,15,c,27,27,d,@#@&$%assert(c == 1 && e == 10 && d == 10)@#@0,5,assert,7,7,c,17,17,e,28,28,d,@#@&$%var a = {
+  valueOf: function () {
+    return "qwerty";
+  }
+}@#@@#@&$%return "qwerty";@#@@#@&$%assert(isNaN(-a))@#@0,5,assert,7,11,isNaN,14,14,a,@#@&$%var a = {
+  valueOf: function () {
+    return -0x01
+  }
+}@#@@#@&$%return -0x01@#@@#@&$%assert(~a === 0)@#@0,5,assert,8,8,a,@#@&$%do
+{
+  cnt++;
+}
+while
+        (cnt < 10
+                );@#@7,9,cnt,31,33,cnt,@#@&$%assert(cnt === 10);@#@0,5,assert,7,9,cnt,@#@&$%do
+  {
+    cnt++;
+    if (cnt === 8)
+      return 1;
+  }
+  while (cnt < 10);@#@11,13,cnt,26,28,cnt,66,68,cnt,@#@&$%{
+    cnt++;
+    if (cnt === 8)
+      return 1;
+  }@#@6,8,cnt,21,23,cnt,@#@&$%if (cnt === 8)
+      return 1;@#@4,6,cnt,@#@&$%return 0;@#@@#@&$%var r = test();@#@8,11,test,@#@&$%assert(cnt === 8 && r === 1);@#@0,5,assert,7,9,cnt,20,20,r,@#@&$%var a = {
+  member: 1,
+  valueOf: function () {
+    return this.member;
+  }
+}@#@@#@&$%return this.member;@#@@#@&$%assert(-a === -1)@#@0,5,assert,8,8,a,@#@&$%for (var i = 0; i < 10; ++i)
+{
+  for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      continue
+      mainloop
+    }
+    ++cnt;
+  }
+}@#@16,16,i,26,26,i,49,49,j,59,59,j,74,74,j,130,132,cnt,@#@&$%{
+  for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      continue
+      mainloop
+    }
+    ++cnt;
+  }
+}@#@20,20,j,30,30,j,45,45,j,101,103,cnt,@#@&$%for (var j = 0; j < 10; ++j)
+  {
+    if (j == 6)
+    {
+      continue
+      mainloop
+    }
+    ++cnt;
+  }@#@16,16,j,26,26,j,41,41,j,97,99,cnt,@#@&$%{
+    if (j == 6)
+    {
+      continue
+      mainloop
+    }
+    ++cnt;
+  }@#@10,10,j,66,68,cnt,@#@&$%if (j == 6)
+    {
+      continue
+      mainloop
+    }@#@4,4,j,@#@&$%{
+      continue
+      mainloop
+    }@#@@#@&$%continue
+      mainloop@#@@#@&$%assert(cnt == 90);@#@0,5,assert,7,9,cnt,@#@&$%top:
+        for (var i = 0; i < 10; i++)
+{
+  for (var j = 0; j < 20; j++)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@29,29,i,37,37,i,62,62,j,70,70,j,87,87,j,96,96,i,127,129,sum,143,145,sum,@#@&$%for (var i = 0; i < 10; i++)
+{
+  for (var j = 0; j < 20; j++)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@16,16,i,24,24,i,49,49,j,57,57,j,74,74,j,83,83,i,114,116,sum,130,132,sum,@#@&$%{
+  for (var j = 0; j < 20; j++)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@20,20,j,28,28,j,45,45,j,54,54,i,85,87,sum,101,103,sum,@#@&$%for (var j = 0; j < 20; j++)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }@#@16,16,j,24,24,j,41,41,j,50,50,i,81,83,sum,@#@&$%{
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }@#@10,10,j,19,19,i,50,52,sum,@#@&$%if (j > 9 && i % 2)
+      continue top;@#@4,4,j,13,13,i,@#@&$%continue top;@#@@#@&$%sum += 1;@#@0,2,sum,@#@&$%assert(sum === 155);@#@0,5,assert,7,9,sum,@#@&$%for (var i = 1; i <= 10; i++)
+{
+  for (var j = 1; j <= 5; j++)
+  {
+    sum += i * j;
+  }
+}@#@16,16,i,25,25,i,50,50,j,58,58,j,71,73,sum,78,78,i,82,82,j,@#@&$%{
+  for (var j = 1; j <= 5; j++)
+  {
+    sum += i * j;
+  }
+}@#@20,20,j,28,28,j,41,43,sum,48,48,i,52,52,j,@#@&$%for (var j = 1; j <= 5; j++)
+  {
+    sum += i * j;
+  }@#@16,16,j,24,24,j,37,39,sum,44,44,i,48,48,j,@#@&$%{
+    sum += i * j;
+  }@#@6,8,sum,13,13,i,17,17,j,@#@&$%sum += i * j;@#@0,2,sum,7,7,i,11,11,j,@#@&$%assert(sum === 825);@#@0,5,assert,7,9,sum,@#@&$%while
+        (
+                bitField >>= 1 &&
+                true
+                )
+{
+  cnt++;
+}@#@32,39,bitField,93,95,cnt,@#@&$%var a = {
+  valueOf: function () {
+    return -1;
+  }
+}@#@@#@&$%return -1;@#@@#@&$%assert(+a === -1)@#@0,5,assert,8,8,a,@#@&$%var a = [1, 2, 4];@#@@#@&$%for (var i = (0 in a) ? 1 : 2; i < 10; ++i)
+{
+  ++cnt;
+}@#@19,19,a,31,31,i,41,41,i,50,52,cnt,@#@&$%{
+  ++cnt;
+}@#@6,8,cnt,@#@&$%assert(cnt == 9);@#@0,5,assert,7,9,cnt,@#@&$%var init;@#@@#@&$%for (init = (129 - 8) / 11; init != 11; )
+{
+  init = 33;
+}@#@5,8,init,28,31,init,46,49,init,@#@&$%{
+  init = 33;
+}@#@4,7,init,@#@&$%init = 33;@#@0,3,init,@#@&$%assert(init == 11);@#@0,5,assert,7,10,init,@#@&$%do
+{
+  cnt++;
+}
+while (false);@#@7,9,cnt,@#@&$%var a = {
+  valueOf: function () {
+    return true;
+  }
+}@#@@#@&$%return true;@#@@#@&$%assert(animal.someparameter != "insect");@#@0,5,assert,7,12,animal,@#@&$%var c = 3;@#@@#@&$%var d;@#@@#@&$%d = a < b ? b < c ? 5 : 10 : 15;@#@0,0,d,4,4,a,8,8,b,12,12,b,16,16,c,@#@&$%assert(d == 5)@#@0,5,assert,7,7,d,@#@&$%var a = 10;@#@@#@&$%var b = 20;@#@@#@&$%assert(a + b === 30);@#@0,5,assert,7,7,a,11,11,b,@#@&$%foo();@#@0,2,foo,@#@&$%var a = {
+  valueOf: function () {
+    return "0x001"
+  }
+}@#@@#@&$%return "0x001"@#@@#@&$%assert(~a === -0x002)@#@0,5,assert,8,8,a,@#@&$%var x = 1 / 3;@#@@#@&$%do
+{
+  x = 1;
+}
+while (x === 3 / 9);@#@7,7,x,23,23,x,@#@&$%{
+  x = 1;
+}@#@4,4,x,@#@&$%x = 1;@#@0,0,x,@#@&$%assert (x === 1);@#@0,5,assert,8,8,x,@#@&$%var a = 1, b = 2;@#@@#@&$%var c;@#@@#@&$%if (a === 1)
+{
+  if (b === 1)
+    c = 3;
+}
+else
+if (b === 2)
+  c = 5;
+else
+  c = 7;@#@4,4,a,21,21,b,34,34,c,52,52,b,63,63,c,77,77,c,@#@&$%{
+  if (b === 1)
+    c = 3;
+}@#@8,8,b,21,21,c,@#@&$%if (b === 1)
+    c = 3;@#@4,4,b,17,17,c,@#@&$%c = 3;@#@0,0,c,@#@&$%if (b === 2)
+  c = 5;
+else
+  c = 7;@#@4,4,b,15,15,c,29,29,c,@#@&$%c = 5;@#@0,0,c,@#@&$%c = 7;@#@0,0,c,@#@&$%assert(c === undefined);@#@0,5,assert,7,7,c,13,21,undefined,@#@&$%var o = {a: 1, b: 2, c: 3, d: 4, e: 5};@#@@#@&$%for (var p in o)
+  {
+    if (p === 'c')
+      return 1;
+    o[p] += 4;
+  }@#@14,14,o,29,29,p,60,60,o,62,62,p,@#@&$%{
+    if (p === 'c')
+      return 1;
+    o[p] += 4;
+  }@#@10,10,p,41,41,o,43,43,p,@#@&$%if (p === 'c')
+      return 1;@#@4,4,p,@#@&$%assert(((o.a === 5 && o.b === 6 && o.c === 3) ||
+        (o.c === 3 && o.d === 8 && o.e === 9)) && r === 1);@#@0,5,assert,9,9,o,22,22,o,35,35,o,58,58,o,71,71,o,84,84,o,99,99,r,@#@&$%for (var i = 0; i < 10; i++)
+{
+  if (i === 5)
+  {
+    continue;
+  }
+  sum += i;
+}@#@16,16,i,24,24,i,37,37,i,70,72,sum,77,77,i,@#@&$%{
+  if (i === 5)
+  {
+    continue;
+  }
+  sum += i;
+}@#@8,8,i,41,43,sum,48,48,i,@#@&$%if (i === 5)
+  {
+    continue;
+  }@#@4,4,i,@#@&$%{
+    continue;
+  }@#@@#@&$%while (1) {
+  cnt++;
+  if (cnt === 10)
+    break;
+}@#@14,16,cnt,27,29,cnt,@#@&$%{
+  cnt++;
+  if (cnt === 10)
+    break;
+}@#@4,6,cnt,17,19,cnt,@#@&$%if (cnt === 10)
+    break;@#@4,6,cnt,@#@&$%var a = {
+  valueOf: function () {
+    return true
+  }
+}@#@@#@&$%return true@#@@#@&$%assert(~a === -2)@#@0,5,assert,8,8,a,@#@&$%var a = {
+  valueOf: function () {
+    return ""
+  }
+}@#@@#@&$%return ""@#@@#@&$%assert(+a === 0)@#@0,5,assert,8,8,a,@#@&$%for (var p in o)
+{
+  o[p] += 4;
+}@#@14,14,o,21,21,o,23,23,p,@#@&$%var b = foo();@#@8,10,foo,@#@&$%return a;@#@7,7,a,@#@&$%assert(b === 1);@#@0,5,assert,7,7,b,@#@&$%if (a === 1)
+  if (b === 1)
+    c = 3;
+  else
+  if (b === 2)
+    c = 5;
+  else
+    c = 7;@#@4,4,a,19,19,b,32,32,c,52,52,b,65,65,c,83,83,c,@#@&$%if (b === 1)
+    c = 3;
+  else
+  if (b === 2)
+    c = 5;
+  else
+    c = 7;@#@4,4,b,17,17,c,37,37,b,50,50,c,68,68,c,@#@&$%if (b === 2)
+    c = 5;
+  else
+    c = 7;@#@4,4,b,17,17,c,35,35,c,@#@&$%var n = {
+  valueOf: function () {
+    return -Infinity;
+  }
+}@#@47,54,Infinity,@#@&$%return -Infinity;@#@8,15,Infinity,@#@&$%var d = {
+  valueOf: function () {
+    return 0;
+  }
+}@#@@#@&$%assert(isNaN(n % d))@#@0,5,assert,7,11,isNaN,13,13,n,17,17,d,@#@&$%var cond = 23;@#@@#@&$%for (var i = (cond < 24) ? 0 in a : 2; i < 10; ++i)
+{
+  ++cnt;
+}@#@14,17,cond,32,32,a,39,39,i,49,49,i,58,60,cnt,@#@&$%assert(cnt == 9)@#@0,5,assert,7,9,cnt,@#@&$%var a = {
+  valueOf: function () {
+    return "not a number";
+  }
+}@#@@#@&$%return "not a number";@#@@#@&$%assert(isNaN(+a))@#@0,5,assert,7,11,isNaN,14,14,a,@#@&$%var x = function () {
+  throw "x";
+};@#@@#@&$%throw "x";@#@@#@&$%var y = function () {
+  throw "y";
+};@#@@#@&$%throw "y";@#@@#@&$%try
+{
+  f_arg(x(), y());
+  assert(false);
+}
+catch (e)
+{
+  if (e === "y")
+  {
+    assert(false);
+  } else {
+    if (e !== "x")
+    {
+      assert(false);
+    }
+  }
+}@#@8,12,f_arg,14,14,x,19,19,y,27,32,assert,62,62,e,81,86,assert,115,115,e,138,143,assert,@#@&$%f_arg(x(), y());@#@0,4,f_arg,6,6,x,11,11,y,@#@&$%assert(false);@#@0,5,assert,@#@&$%if (e === "y")
+  {
+    assert(false);
+  } else {
+    if (e !== "x")
+    {
+      assert(false);
+    }
+  }@#@4,4,e,23,28,assert,57,57,e,80,85,assert,@#@&$%{
+    assert(false);
+  }@#@6,11,assert,@#@&$%{
+    if (e !== "x")
+    {
+      assert(false);
+    }
+  }@#@10,10,e,33,38,assert,@#@&$%if (e !== "x")
+    {
+      assert(false);
+    }@#@4,4,e,27,32,assert,@#@&$%{
+      assert(false);
+    }@#@8,13,assert,@#@&$%ForLabel:
+        for (var p in o)
+{
+  if (p === "b")
+    continue ForLabel;
+  o[p] += 4;
+}@#@32,32,o,43,43,p,79,79,o,81,81,p,@#@&$%for (var p in o)
+{
+  if (p === "b")
+    continue ForLabel;
+  o[p] += 4;
+}@#@14,14,o,25,25,p,61,61,o,63,63,p,@#@&$%{
+  if (p === "b")
+    continue ForLabel;
+  o[p] += 4;
+}@#@8,8,p,44,44,o,46,46,p,@#@&$%if (p === "b")
+    continue ForLabel;@#@4,4,p,@#@&$%assert(o.a === 5 && o.b === 2 && o.c === 7);@#@0,5,assert,7,7,o,20,20,o,33,33,o,@#@&$%while (mask)
+{
+  mask >>= 1;
+  if (mask & 1)
+    continue;
+  numZeroes++;
+}@#@7,10,mask,17,20,mask,35,38,mask,61,69,numZeroes,@#@&$%assert((a++ === 1) && (a === 2));@#@0,5,assert,8,8,a,23,23,a,@#@&$%assert(animal[1] != "animal");@#@0,5,assert,7,12,animal,@#@&$%assert(plus(a, b) !== 2)@#@0,5,assert,7,10,plus,12,12,a,15,15,b,@#@&$%return a.value + b.value;@#@7,7,a,17,17,b,@#@&$%for (var i = 0; i < 10; i++)
+  for (var j = 0; j < 20; j++)
+  {
+    if (j > 9)
+      continue;
+    sum += 1;
+  }@#@16,16,i,24,24,i,47,47,j,55,55,j,72,72,j,99,101,sum,@#@&$%for (var j = 0; j < 20; j++)
+  {
+    if (j > 9)
+      continue;
+    sum += 1;
+  }@#@16,16,j,24,24,j,41,41,j,68,70,sum,@#@&$%{
+    if (j > 9)
+      continue;
+    sum += 1;
+  }@#@10,10,j,37,39,sum,@#@&$%if (j > 9)
+      continue;@#@4,4,j,@#@&$%assert(sum === 100);@#@0,5,assert,7,9,sum,@#@&$%assert(-a === 1)@#@0,5,assert,8,8,a,@#@&$%var a = {
+  toString: function () {
+    return "1"
+  }
+}@#@@#@&$%return "1"@#@@#@&$%assert(plus(a, b) === "11");@#@0,5,assert,7,10,plus,12,12,a,15,15,b,@#@&$%assert(animal.canFly !== bird.canFly);@#@0,5,assert,7,12,animal,25,28,bird,@#@&$%var a = {
+  valueOf: function () {
+    return undefined;
+  }
+}@#@46,54,undefined,@#@&$%assert((a-- === 1) && (a === 0));@#@0,5,assert,8,8,a,23,23,a,@#@&$%var obj = new Object();@#@14,19,Object,@#@&$%obj.x = "defined";@#@0,2,obj,@#@&$%do
+{
+  delete obj.x;
+}
+while (obj.x !== undefined);@#@14,16,obj,30,32,obj,40,48,undefined,@#@&$%{
+  delete obj.x;
+}@#@11,13,obj,@#@&$%delete obj.x;@#@7,9,obj,@#@&$%var b = {name: "b", value: 1};@#@@#@&$%{
+  var a = null;
+  ;
+  a = 'null';
+}@#@24,24,a,@#@&$%var cnt = 25;@#@@#@&$%while (cnt)
+  {
+    cnt--;
+    if (cnt === 3)
+      return 1;
+  }@#@7,9,cnt,20,22,cnt,35,37,cnt,@#@&$%{
+    cnt--;
+    if (cnt === 3)
+      return 1;
+  }@#@6,8,cnt,21,23,cnt,@#@&$%cnt--;@#@0,2,cnt,@#@&$%if (cnt === 3)
+      return 1;@#@4,6,cnt,@#@&$%r = test();@#@0,0,r,4,7,test,@#@&$%assert(cnt === 3 && r === 1);@#@0,5,assert,7,9,cnt,20,20,r,@#@&$%var animal = new Animal();@#@17,22,Animal,@#@&$%assert(animal.canWalk);@#@0,5,assert,7,12,animal,@#@&$%var b = {basep: "base"};@#@@#@&$%this.derivedp = "derived";@#@@#@&$%dConstr.prototype = b;@#@0,6,dConstr,20,20,b,@#@&$%var d = new dConstr();@#@12,18,dConstr,@#@&$%for (var p in d)
+{
+  d[p] += "A";
+}@#@14,14,d,21,21,d,23,23,p,@#@&$%{
+  d[p] += "A";
+}@#@4,4,d,6,6,p,@#@&$%d[p] += "A";@#@0,0,d,2,2,p,@#@&$%assert(d.basep === "baseA" && d.derivedp === "derivedA");@#@0,5,assert,7,7,d,30,30,d,@#@&$%var i;@#@@#@&$%for (i = 0; i < 10; i++)
+  {
+    if (i === 4)
+      return 1;
+  }@#@5,5,i,12,12,i,20,20,i,37,37,i,@#@&$%{
+    if (i === 4)
+      return 1;
+  }@#@10,10,i,@#@&$%if (i === 4)
+      return 1;@#@4,4,i,@#@&$%assert(r === 1 && i === 4);@#@0,5,assert,7,7,r,18,18,i,@#@&$%for (var i = 1, j = 1, k = 1; i + j + k <= 100; i++, j += 2, k += 3)
+{
+  sum += i + j + k;
+}@#@30,30,i,34,34,j,38,38,k,48,48,i,53,53,j,61,61,k,73,75,sum,80,80,i,84,84,j,88,88,k,@#@&$%{
+  sum += i + j + k;
+}@#@4,6,sum,11,11,i,15,15,j,19,19,k,@#@&$%sum += i + j + k;@#@0,2,sum,7,7,i,11,11,j,15,15,k,@#@&$%assert(sum == 867);@#@0,5,assert,7,9,sum,@#@&$%f_arg = function () {
+  return arguments;
+}@#@0,4,f_arg,31,39,arguments,@#@&$%var args = f_arg (1, 2, 3);@#@11,15,f_arg,@#@&$%for (var i = 0; i < 3; i++)
+{
+  assert(args[i] === i + 1);
+}@#@16,16,i,23,23,i,32,37,assert,39,42,args,44,44,i,51,51,i,@#@&$%{
+  assert(args[i] === i + 1);
+}@#@4,9,assert,11,14,args,16,16,i,23,23,i,@#@&$%assert(args[i] === i + 1);@#@0,5,assert,7,10,args,12,12,i,19,19,i,@#@&$%assert(args[3] === undefined);@#@0,5,assert,7,10,args,19,27,undefined,@#@&$%var bVal = true;@#@@#@&$%var val = "test";@#@@#@&$%while (!bVal)
+{
+  val += " of while";
+}@#@8,11,bVal,18,20,val,@#@&$%{
+  val += " of while";
+}@#@4,6,val,@#@&$%val += " of while";@#@0,2,val,@#@&$%assert(val === "test");@#@0,5,assert,7,9,val,@#@&$%var a = 10, b = 5;@#@@#@&$%var c = a + b@#@8,8,a,12,12,b,@#@&$%assert(test() == 15);@#@0,5,assert,7,10,test,@#@&$%var a = new Array(1, 2, 3, 4, 5, 6, 7);@#@12,16,Array,@#@&$%a.eight = 8;@#@0,0,a,@#@&$%var p;@#@@#@&$%for (p in a)
+{
+  a[p] += 1;
+}@#@5,5,p,10,10,a,17,17,a,19,19,p,@#@&$%{
+  a[p] += 1;
+}@#@4,4,a,6,6,p,@#@&$%a[p] += 1;@#@0,0,a,2,2,p,@#@&$%assert(a[0] === 2 && a[1] === 3 && a[2] === 4 && a[3] === 5 &&
+        a[4] === 6 && a[5] === 7 && a[6] === 8 && a['eight'] === 9);@#@0,5,assert,7,7,a,21,21,a,35,35,a,49,49,a,71,71,a,85,85,a,99,99,a,113,113,a,@#@&$%do {
+  cnt++;
+  if (cnt === 10)
+  {
+    break;
+  }
+}
+while (0, 1);@#@7,9,cnt,20,22,cnt,@#@&$%{
+  cnt++;
+  if (cnt === 10)
+  {
+    break;
+  }
+}@#@4,6,cnt,17,19,cnt,@#@&$%if (cnt === 10)
+  {
+    break;
+  }@#@4,6,cnt,@#@&$%var a = {name: "a", value: 1};@#@@#@&$%assert(plus(a, b) === 2);@#@0,5,assert,7,10,plus,12,12,a,15,15,b,@#@&$%for (i = 0; ; i += 5)
+{
+  if (i === 100)
+    break;
+}@#@5,5,i,14,14,i,30,30,i,@#@&$%{
+  if (i === 100)
+    break;
+}@#@8,8,i,@#@&$%if (i === 100)
+    break;@#@4,4,i,@#@&$%while ((1234 - 34) % 23 - 1234 * 23.222)
+{
+  cnt++;
+  if (cnt === 10)
+    break;
+}@#@45,47,cnt,58,60,cnt,@#@&$%var sum = 0, i = 0;@#@@#@&$%WhileLabel:
+        while (++i < 10)
+{
+  if (i === 5)
+  {
+    continue WhileLabel;
+  }
+  sum += i;
+}@#@29,29,i,45,45,i,89,91,sum,96,96,i,@#@&$%while (++i < 10)
+{
+  if (i === 5)
+  {
+    continue WhileLabel;
+  }
+  sum += i;
+}@#@9,9,i,25,25,i,69,71,sum,76,76,i,@#@&$%{
+  if (i === 5)
+  {
+    continue WhileLabel;
+  }
+  sum += i;
+}@#@8,8,i,52,54,sum,59,59,i,@#@&$%if (i === 5)
+  {
+    continue WhileLabel;
+  }@#@4,4,i,@#@&$%{
+    continue WhileLabel;
+  }@#@@#@&$%continue WhileLabel;@#@@#@&$%var o = {p1: 1, p2: 2, p3: {p1: 100, p2: 200, p3: 100}, p4: 4, p5: 5}, sum = 0;@#@@#@&$%top:
+        for (var p in o)
+{
+  if (p === "p2")
+    continue;
+  if (typeof (o[p]) === "object")
+  {
+    for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }
+  }
+  sum += 20;
+}@#@27,27,o,38,38,p,78,78,o,80,80,p,121,121,o,123,123,p,143,144,pp,184,186,sum,191,191,o,193,193,p,196,197,pp,213,215,sum,@#@&$%for (var p in o)
+{
+  if (p === "p2")
+    continue;
+  if (typeof (o[p]) === "object")
+  {
+    for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }
+  }
+  sum += 20;
+}@#@14,14,o,25,25,p,65,65,o,67,67,p,108,108,o,110,110,p,130,131,pp,171,173,sum,178,178,o,180,180,p,183,184,pp,200,202,sum,@#@&$%{
+  if (p === "p2")
+    continue;
+  if (typeof (o[p]) === "object")
+  {
+    for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }
+  }
+  sum += 20;
+}@#@8,8,p,48,48,o,50,50,p,91,91,o,93,93,p,113,114,pp,154,156,sum,161,161,o,163,163,p,166,167,pp,183,185,sum,@#@&$%if (p === "p2")
+    continue;@#@4,4,p,@#@&$%if (typeof (o[p]) === "object")
+  {
+    for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }
+  }@#@12,12,o,14,14,p,55,55,o,57,57,p,77,78,pp,118,120,sum,125,125,o,127,127,p,130,131,pp,@#@&$%{
+    for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }
+  }@#@21,21,o,23,23,p,43,44,pp,84,86,sum,91,91,o,93,93,p,96,97,pp,@#@&$%for (var pp in o[p])
+    {
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }@#@15,15,o,17,17,p,37,38,pp,78,80,sum,85,85,o,87,87,p,90,91,pp,@#@&$%{
+      if (pp === "p2")
+        continue top;
+      sum += o[p][pp];
+    }@#@12,13,pp,53,55,sum,60,60,o,62,62,p,65,66,pp,@#@&$%if (pp === "p2")
+        continue top;@#@4,5,pp,@#@&$%sum += o[p][pp];@#@0,2,sum,7,7,o,9,9,p,12,13,pp,@#@&$%sum += 20;@#@0,2,sum,@#@&$%assert(sum === 160);@#@0,5,assert,7,9,sum,@#@&$%var i = 0;@#@@#@&$%for (; ; )
+{
+  if (i++ === 100)
+    break;
+}@#@19,19,i,@#@&$%{
+  if (i++ === 100)
+    break;
+}@#@8,8,i,@#@&$%if (i++ === 100)
+    break;@#@4,4,i,@#@&$%var prot = {
+  b: 3
+};@#@@#@&$%assert(obj.b === 3);@#@0,5,assert,7,9,obj,@#@&$%Foo.prototype.bar = 42;@#@0,2,Foo,@#@&$%var foo = new Foo();@#@14,16,Foo,@#@&$%if (!(delete foo.bar))
+  assert(false)@#@13,15,foo,25,30,assert,@#@&$%assert(false)@#@0,5,assert,@#@&$%if (foo.bar != 42)
+  assert(false)@#@4,6,foo,21,26,assert,@#@&$%if (!(delete Foo.prototype.bar))
+  assert(false)
+@#@13,15,Foo,35,40,assert,@#@&$%assert(false)
+@#@0,5,assert,@#@&$%assert(animal.name === "animal");@#@0,5,assert,7,12,animal,@#@&$%d = a > b ? 5 : b < c ? 10 : 15;@#@0,0,d,4,4,a,8,8,b,16,16,b,20,20,c,@#@&$%assert(d == 10)@#@0,5,assert,7,7,d,@#@&$%var i = 10;@#@@#@&$%while (i-- > 0)
+{
+  if (i % 2)
+    continue;
+  var j = 0;
+  while (j++ < 20)
+  {
+    if (j % 2 === 0)
+      continue;
+    cnt++;
+  }
+}@#@7,7,i,24,24,i,67,67,j,89,89,j,122,124,cnt,@#@&$%{
+  if (i % 2)
+    continue;
+  var j = 0;
+  while (j++ < 20)
+  {
+    if (j % 2 === 0)
+      continue;
+    cnt++;
+  }
+}@#@8,8,i,51,51,j,73,73,j,106,108,cnt,@#@&$%if (i % 2)
+    continue;@#@4,4,i,@#@&$%var j = 0;@#@@#@&$%while (j++ < 20)
+  {
+    if (j % 2 === 0)
+      continue;
+    cnt++;
+  }@#@7,7,j,29,29,j,62,64,cnt,@#@&$%{
+    if (j % 2 === 0)
+      continue;
+    cnt++;
+  }@#@10,10,j,43,45,cnt,@#@&$%if (j % 2 === 0)
+      continue;@#@4,4,j,@#@&$%assert(cnt === 50);@#@0,5,assert,7,9,cnt,@#@&$%var a = {
+  get a() {
+    return 3;
+  }
+};@#@@#@&$%return 3;@#@@#@&$%assert(a.a === 3);@#@0,5,assert,7,7,a,@#@&$%assert(-a === -0)@#@0,5,assert,8,8,a,@#@&$%var i = 0, j = 0;@#@@#@&$%top:
+        while (i++ < 10)
+{
+  j = 0;
+  while (j++ < 20)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@20,20,i,34,34,j,50,50,j,72,72,j,81,81,i,112,114,sum,128,130,sum,@#@&$%while (i++ < 10)
+{
+  j = 0;
+  while (j++ < 20)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@7,7,i,21,21,j,37,37,j,59,59,j,68,68,i,99,101,sum,115,117,sum,@#@&$%{
+  j = 0;
+  while (j++ < 20)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }
+  sum += 1;
+}@#@4,4,j,20,20,j,42,42,j,51,51,i,82,84,sum,98,100,sum,@#@&$%j = 0;@#@0,0,j,@#@&$%while (j++ < 20)
+  {
+    if (j > 9 && i % 2)
+      continue top;
+    sum += 1;
+  }@#@7,7,j,29,29,j,38,38,i,69,71,sum,@#@&$%sum += 1;@#@0,2,sum,@#@&$%assert(sum === 150);@#@0,5,assert,7,9,sum,@#@&$%

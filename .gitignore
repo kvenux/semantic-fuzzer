@@ -8,6 +8,8 @@ afl-gotcpu
 afl-plot
 afl-showmap
 afl-tmin
+afl-new-fuzz
+afl-clang-fast++
 *.so
 *.o
 tree_mutation/Makefile
@@ -28,3 +30,5 @@ as
 .goutputstream-K6FWVZ
 .goutputstream-LQLYVZ
 .goutputstream-U2F2VZ
+
+out-semantic-*

@@ -8,6 +8,11 @@
 #include "tree/ParseTreeListener.h"
 #include "support/CPPUtils.h"
 
+#include <iostream>
+#include <chrono>
+#include <cstring>
+#include <cstdlib>
+
 #include "tree/IterativeParseTreeWalker.h"
 #include "tree/ParseTreeWalker.h"
 
@@ -21,6 +26,7 @@ ParseTreeWalker::~ParseTreeWalker() {
 }
 
 void ParseTreeWalker::walk(ParseTreeListener *listener, ParseTree *t) const {
+  if(t == NULL) return;
   if (is<ErrorNode *>(t)) {
     listener->visitErrorNode(dynamic_cast<ErrorNode *>(t));
     return;
@@ -28,7 +34,7 @@ void ParseTreeWalker::walk(ParseTreeListener *listener, ParseTree *t) const {
     listener->visitTerminal(dynamic_cast<TerminalNode *>(t));
     return;
   }
-
+  std::cout<<"enterRule(listener, t);  "<<std::endl;
   enterRule(listener, t);
   for (auto &child : t->children) {
     walk(listener, child);
@@ -37,13 +43,18 @@ void ParseTreeWalker::walk(ParseTreeListener *listener, ParseTree *t) const {
 }
 
 void ParseTreeWalker::enterRule(ParseTreeListener *listener, ParseTree *r) const {
+  if(r == NULL) return;
   ParserRuleContext *ctx = dynamic_cast<ParserRuleContext *>(r);
+  if(ctx == NULL) return;
+  // std::cout<<"enterRule  "<<ctx->getRuleIndex()<<std::endl;
   listener->enterEveryRule(ctx);
   ctx->enterRule(listener);
 }
 
 void ParseTreeWalker::exitRule(ParseTreeListener *listener, ParseTree *r) const {
+  if(r == NULL) return;
   ParserRuleContext *ctx = dynamic_cast<ParserRuleContext *>(r);
+  if(ctx == NULL) return;
   ctx->exitRule(listener);
   listener->exitEveryRule(ctx);
 }
